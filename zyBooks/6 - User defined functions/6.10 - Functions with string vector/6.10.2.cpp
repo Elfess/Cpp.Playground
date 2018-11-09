@@ -8,11 +8,20 @@ using namespace std;
 		"Hello! I'm Miley! Nice to meet you!"
 */
 
-void MakeSentenceExcited(string& sentenceText) {
+void MakeSentenceExcited(string& sentenceText) 
+{
 
    /* Your solution goes here  */
+     for(int i=0;sentenceText[i]!='\0';i++)
+     {
+	if(sentenceText[i]=='.')
+	{
+	     sentenceText[i]='!';
+	}
+      }
+  return;
 
-}
+ }
 
 int main() {
    string testStr;
